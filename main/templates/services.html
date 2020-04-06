@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}About - Design Scorecard{% endblock %}
+
+
+{% block content %}
+
+<main class="mt-90">
+
+  <!-- Available App  Start-->
+  <div class="available-app-area">
+      <div class="container">
+          <div class="row d-flex justify-content-between">
+              <div class="col-xl-5 col-lg-6">
+                  <div class="app-caption">
+                      <div class="section-tittle section-tittle3">
+                          <h2>We help businesses get best user experiences.</h2>
+                          <p>Our focus is on creating amazing products, practices, and open work for all teams.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-6 col-lg-6">
+                  <div class="app-img">
+                      <img src="{% static 'img/shape/available-app.png' %}" alt="">
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Shape -->
+      <div class="app-shape">
+          <img src="{% static 'img/shape/app-shape-top.png' %}" alt="" class="app-shape-top heartbeat d-none d-lg-block">
+          <img src="{% static 'img/shape/app-shape-left.png' %}" alt="" class="app-shape-left d-none d-xl-block">
+          <img src="{% static 'img/shape/app-shape-right.png' %}" alt="" class="app-shape-right bounce-animate ">
+      </div>
+  </div>
+  <!-- Available App End-->
+
+  <!-- Services Area Start -->
+  <section class="service-area sky-blue section-padding2">
+      <div class="container">
+          <!-- Section Tittle -->
+          <div class="row d-flex justify-content-center">
+              <div class="col-lg-6">
+                  <div class="section-tittle text-center">
+                      <h2>How We Can Help With<br>Your Ideas!</h2>
+                  </div>
+              </div>
+          </div>
+          <!-- Section caption -->
+          <div class="row">
+              <div class="col-xl-4 col-lg-4 col-md-6">
+                  <div class="services-caption text-center mb-30">
+                      <div class="service-icon">
+                          <span class="flaticon-businessman"></span>
+                      </div>
+                      <div class="service-cap">
+                          <h4><a href="#">Easily Manage</a></h4>
+                          <p>We provide new programs that are fashioned to meet the specific needs of organizations.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6">
+                  <div class="services-caption active text-center mb-30">
+                      <div class="service-icon">
+                          <span class="flaticon-pay"></span>
+                      </div>
+                      <div class="service-cap">
+                          <h4><a href="#">Workforce Solutions</a></h4>
+                          <p>We provide applications to manage workforce and suitably run a smooth business</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6">
+                  <div class="services-caption text-center mb-30">
+                      <div class="service-icon">
+                          <span class="flaticon-plane"></span>
+                      </div>
+                      <div class="service-cap">
+                          <h4><a href="#">Open Source</a></h4>
+                          <p>We build open source projects with creative minds to help communities.</p>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </section>
+  <!-- Services Area End -->
+
+      <!-- Say Something Start -->
+      <!-- <div class="say-something-aera pt-90 pb-90 fix">
+          <div class="container">
+              <div class="row justify-content-between align-items-center">
+                  <div class="offset-xl-1 offset-lg-1 col-xl-5 col-lg-5">
+                      <div class="say-something-cap">
+                          <h2>Say Hello To The Collaboration Hub.</h2>
+                      </div>
+                  </div>
+                  <div class="col-xl-2 col-lg-3">
+                      <div class="say-btn">
+                          <a href="#" class="btn radius-btn">Contact Us</a>
+                      </div>
+                  </div>
+              </div>
+          </div> -->
+          <!-- shape -->
+          <!-- <div class="say-shape">
+              <img src="{% static 'img/shape/say-shape-left.png' %}" alt="" class="say-shape1 rotateme d-none d-xl-block">
+              <img src="{% static 'img/shape/say-shape-right.png' %}" alt="" class="say-shape2 d-none d-lg-block">
+          </div>
+      </div> -->
+      <!-- Say Something End -->
+
+  </main>
+
+{% endblock content %}
