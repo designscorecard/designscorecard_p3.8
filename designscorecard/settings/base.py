@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(os.path.join(__file__,os.pardir))))
 
 
 # Quick-start development settings - unsuitable for production
@@ -21,28 +21,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'zk9v)b75@)ubzpo&f(2-3f9%p@ctc^sw=_%y@s7#5fab0-slu-'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-
-# Console Email Logo (when in development, run in console and run
-# smtp in production )
-
-if not DEBUG:
-    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-    EMAIL_HOST_USER = "username"
-    EMAIL_HOST = 'smtp.domain.com'
-    EMAIL_PORT = 587
-    EMAIL_USE_TLS = True
-    EMAIL_HOST_PASSWORD = "password"
-else:
-    EMAIL_BACKEND = (
-        "django.core.mail.backends.console.EmailBackend"
-    )
-
-
-    ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -120,17 +98,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'designscorecard.wsgi.application'
-
-
-# Database
-# https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
 
 
 # DATABASES = {
