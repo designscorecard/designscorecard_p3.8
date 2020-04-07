@@ -22,9 +22,13 @@ ADMINS = (
     ('Kevwe Kuale', 'kaykuale@gmail.com'),
     ('Noah Olatoye', 'nolatoye@instincthub.com'),
 )
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.designscorecard.com']
 
 DATABASES = {
     'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'designscorecard',
+        'USER': 'designscorecard',
+        'PASSWORD': 'Captain101$',
     }
 }
